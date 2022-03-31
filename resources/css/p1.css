@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+h1{
+	font-family:arial;
+	font-size:30px;
+	color:blue;
+	text-decoration:underline;
+	text-align:center;
+	text-shadow:2px 2px 2px red;
+}
+body{
+	background-color:powderblue; 
+}
+#textid{
+	font-size:20px;
+	font-family:italic;
+	color:white;
+	
+}
+
+div#d1{
+	font-size:20px;
+	color:orange
+}
+
+div#d2{
+	font-size:20px;
+	color:Green
+}
+div#d3{
+	font-size:20px;
+	color:brown
+}
+p#p1{
+	font-size:20px;
+	color:red
+}
+
+.first{
+	color:#1d6327;
+}

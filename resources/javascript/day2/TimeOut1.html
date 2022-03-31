@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id ="watch" align="right">
+<p>within 3 seconds stop the watch otherwise greeting will be displayed</p>
+<button onclick="myStopFunction()">Stop Greeting</button>
+<button onclick="watchStopFunction()">Stop Watch</button>
+<h3 id="greet"></h3>
+
+<script type="text/javascript">
+	const myTimeout=setTimeout(myGreeting,3000);
+	function myGreeting(){
+		document.getElementById("greet").innerHTML="Happy Birthday!"
+	}
+	
+	function myStopFunction(){
+		clearTimeout(myTimeout);
+	}
+	
+	const myInterval=setInterval(myWatch,1000);
+	function myWatch(){
+		const date=new Date();
+		document.getElementById("watch").innerHTML=date.toLocaleTimeString();
+	}
+	
+	function watchStopFunction(){
+		clearInterval(myInterval);
+	}
+	
+	
+</script>
+</body>
+</html>

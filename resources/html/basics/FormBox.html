@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<!--  checkBox field -->
+	Java technologies are:
+	<br></br>
+	<input type="checkbox" name="tech" value="jSP" checked="checked"/>JSP<br>
+	<input type="checkbox" name="tech" value="JSF" "/>JSF<br>
+	<input type="checkbox" name="tech" value="JWS" "/>JWS<br>
+	<input type="checkbox" name="tech" value="C" "/>C<br>
+	<input type="checkbox" name="tech" value="PERL" "/>PERL<br>
+	
+	<!--  Radio Field-->
+	Select your sector in which your working:
+	<input type="radio" name="sector" value="private" />private
+	<input type="radio" name="sector" value="public" />public
+	
+	<!-- Drop down -->
+	<br>which training program you would like to  attend:<br>
+	<select name="pref">
+	<option value="ih" selected>Internet-Html
+	<option value="js" selected>Java Script
+	<option value="vbs" selected>VB Script
+	<option value="asp" selected>ASP
+	<option value="xml" selected>XML
+	<option value="java" selected>Java
+	</select>
+	
+	<br>Enter your favourite city:<br>
+	<input type="text" id="favcity" list="cities">
+	<datalist id="cities">
+	<option value="Hyderabad">
+	<option value="Bangalore">
+	<option value="Chennai">
+	<option value="Mumbai">
+	<option value="Delhi">
+	<option value="Shimla">
+	<option value="Srinagar">
+	</datalist>
+</form>
+</body>
+</html>

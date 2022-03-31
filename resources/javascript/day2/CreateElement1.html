@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Creating element</h1>
+<div id= "cel">
+	<p>this paragraph already exists</p>
+</div>
+<button onclick="createEle()" >Click</button>
+<script type="text/javascript">
+	function createEle(){
+		let div=document.createElement('div');
+		div.id='con';
+		div.innerHTML="<p>This paragraph is created using createElement </p>"
+		document.body.appendChild(div);
+		
+		const d=document.getElementById("cel");
+		const para=document.createElement("p");
+		para.innerHTML="This is a new paragraph";
+		d.insertBefore(para,d.children[0]);
+	}
+</script>
+</body>
+</html>

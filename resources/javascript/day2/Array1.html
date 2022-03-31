@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let mobiles=["Apple","Oneplus","Redmi","Samsung"];
+	
+	document.write("Length of array : "+mobiles.length+"<br>");
+	document.write("adding an element : "+mobiles.push("Vivo")+"<br>");
+	document.write("After adding element : "+mobiles+"<br>");
+	document.write("Removing an element : "+mobiles.pop()+"<br>");
+	document.write("After removing element : "+mobiles+"<br>");
+	
+	mobiles[mobiles.length]="Oppo";
+	document.write("After adding element : "+mobiles+"<br>");
+	
+	delete mobiles[3];
+	document.write("Length after deleting element : "+mobiles.length+"<br>");
+	
+	mobiles.splice(2,0,"Realme","Nokia");
+	document.write("After adding element : "+mobiles+"<br>");
+	
+	mobiles.splice(2,1);
+	document.write("After Removing element : "+mobiles+"<br>");
+	document.write("Length after deleting element : "+mobiles.length+"<br>");
+	
+	var arr=new Array("Sumanth","Arun","Prakash","Karthik");
+	document.write("Array Length : "+arr.length+"<br>");
+	
+	var arrjoin=arr.join(" , ");
+	document.write("Array join : "+arrjoin+"<br>");
+	
+	var arrslice=arr.slice(0,2);
+	document.write("Array Slice : "+arrslice+"<br>");
+	
+	var arrreverse=arr.reverse();
+	document.write("Array reverse : "+arrreverse+"<br>");
+	
+	var arrsort=arr.sort();
+	document.write("Array sort : "+arrsort+"<br>");
+	
+	var arrvalue=new Array(5,8,9,1,3,5);
+	document.write("Sorted arrvalue : "+arrvalue.sort()+"<br>");
+	
+	document.write("Array sort in reverse : "+arrvalue.sort(function(a,b){return b-a})+"<br>");
+	
+	document.write("Array sort in reverse(Arrow) : "+arrvalue.sort((a,b)=>b-a)+"<br>");
+	
+</script>
+
+</body>
+</html>

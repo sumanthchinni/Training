@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var str1="Banana";
+	len=str1.length;
+	document.write("String length is : "+len+"<br>");
+	
+	//Getting Characters
+	document.write("charAt : "+str1.charAt(len-1)+"<br>");
+	document.write("charAt : "+str1[len-1]+"<br>");
+	
+	//Searching subString
+	document.write("index of : "+str1.indexOf("a",3)+"<br>");
+	document.write("last index of : "+str1.indexOf("b",4)+"<br>");
+	document.write("Starts with : "+str1.startsWith("an")+"<br>");
+	document.write("ends with : "+str1.endsWith("na")+"<br>");
+	document.write("includes : "+str1.includes("ana")+"<br>");
+
+	//Matching substring
+	document.write(str1.match("nan")+"<br>");
+	document.write(str1.replace("nan","man")+"<br>");
+	
+	//Getting subString
+	document.write("Slice : "+str1.slice(3)+"<br>");
+	document.write("Slice : "+str1.slice(-4,-1)+"<br>");
+	document.write(str1.substring(3,6)+"<br>");
+	document.write(str1.substr(3,2)+"<br>");
+</script>
+
+</body>
+</html>

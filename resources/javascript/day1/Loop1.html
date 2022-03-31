@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="mobiles1" ></p>
+<p id="mobiles2" ></p>
+<p id="mobiles3" ></p>
+<p id="str1"></p>
+<script type="text/javascript">
+	var mobiles=["Apple","Oneplus","Redmi","Samsung","Vivo","Oppo"];
+	
+	// Traditional loop
+	let a="<ol>";
+	for(let i=0;i<mobiles.length;i++){
+		a += "<li>"+mobiles[i]+"</li>";
+	}
+	a+="</ol>";
+	console.log(a);
+	document.getElementById("mobiles1").innerHTML=a;
+	
+	//using for of
+	var temp;
+	temp="<ol type='A'>"
+	for (let x of mobiles){
+		temp += "<li>"+x+"</li>";
+	}
+	temp+="</ol>";
+	document.getElementById("mobiles2").innerHTML=temp;
+	
+	//Arrays.for each
+	var text;
+	text="<ol type='I'>"
+	mobiles.forEach(itrFunction);
+	text+="</ol>"
+	document.getElementById("mobiles3").innerHTML=text;
+	function itrFunction(value){
+		text+="<li>"+value+"</li>"; 
+	}
+	
+	//Looping String
+	let str="for loop";
+	let newStr=" ";
+	for(let x of str){
+		newStr+=x;
+	}
+	document.getElementById("str1").innerHTML=newStr;
+	
+	
+	
+</script>
+
+</body>
+</html>

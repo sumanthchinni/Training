@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var anotherWindow=null;
+	function createWindow(){
+		anotherWindow=window.open("","","toolbar=no,status=no,width=200,height=200" )
+		if(anotherWindow!=null){
+			var window1 ="<HTML><HEAD><TITLE>Another window</TITLE></HEAD>"
+				window1 +="<body><h3>Hello Everyone</h3>"
+				window1 +="<p>Good Morning Everyone</p>"
+				window1 +="<input type='button' onclick='self.close()' value='close'>"
+				window1 +="</body></html>"
+		anotherWindow.document.write(window1)
+		}
+		
+	}
+</script>
+</head>
+<body>
+<p id="openWindow" onClick="createWindow()">Click here to open a new window</p>
+<p id="closeWindow" onClick="anoterWindow.close()">Click here to close a new window</p>
+<input type='button' onClick='if (anotherWindow) anotherWindow.focus()' value='focusButton' />
+<input type='button' onClick='if (anotherWindow) anotherWindow.blur()' value='BlurButton' />
+</body>
+</html>

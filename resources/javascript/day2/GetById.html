@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form id="myforms" action="/GetByTagName.html">
+	First name: <input type="text" id="fname"  name="fname" value="" ><br>
+	Last name: <input type="text" id="lname"  name="lname" value="" ><br>
+</form>
+
+<button onclick="validate()">show form values</button>
+<p id="formvalues"></p>
+<script>
+function myfunction(){
+	var x=document.forms['myforms'];
+	var text="";
+	var i;
+	for(i=0;i<x.length;i++){
+		text+=x.elements[i].value+"<br>";
+		
+	}
+	document.getElementById("formvalues").innnerHTML=text;
+}
+function validate(){
+	let val=document.forms['myforms'].fname.value;
+	if(val.trim()==''){
+		alert("in here");
+		document.getElementById("msg").style.color="red";
+		document.getElementById("msg").innerHTML="input required";
+		document.forms['myforms'].fname.focus();
+		return;
+		
+	}else{
+		document.getElementById("msg").innerHTML = "";
+	}
+	myfunction();
+}
+
+
+</script>
+
+</body>
+</html>

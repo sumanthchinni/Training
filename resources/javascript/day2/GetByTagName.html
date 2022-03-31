@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<H3>Elements by tag Name</H3>
+	<p>first Element</p>
+	<p>Second Element</p>
+	<p>Third Element</p>
+	
+	<p id="paracontent" ></p>
+	
+	<script >
+
+	var a=document.getElementsByTagName("p")
+	document.getElementById("paracontent").innerHTML=a[1].innerHTML
+	
+	</script>
+	
+</body>
+</html>

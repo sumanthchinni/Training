@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="form1" action="store.html" method="post">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="fname" max="10" size=30><br>
+	<label for="lname">Last Name:</label>
+	<input type="text" id="lname" name="lname"  required><br>
+	
+	<!-- password field -->
+	<label for="pwd">Password:</label>
+	<input type="password" id="pwd" name="pwd"><br>
+	
+	<!-- email field -->
+	<label for="email">enter your email:</label>
+	<input type="email" id="email" name="email"><br>
+	<!-- Hidden field -->
+	<input type="hidden" id="personId" name="personId" value="12213"><br>
+	
+	<!-- date field -->
+	<label for="birthday">Birthday date:</label>
+	<input type="date" id="birthday" name="birthday"><br>
+	
+	<!-- date & timefield -->
+	<label for="birthdaytime">Birthday date &time:</label>
+	<input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+	
+	<!-- number field -->
+	<label for="Age">Age:</label>
+	<input type="number" id="Age" name="Age" step="5"><br>
+	
+	<!-- Range field -->
+	<label for="sal">salary(between 10000 and 100000):</label>
+	<input type="range" id="sal" name="sal" min="10000" max="100000"><br>
+	
+		
+	<!-- Search field -->
+	<label for="gsearch">Google Search:</label>
+	<input type="search" id="gsearch" name="gsearch"><br>
+	
+	<!-- Telephone field -->
+	<label for="phone">Enter your phone number:</label>
+	<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"><br>
+	
+			
+	<!-- time field -->
+	<label for="time">select a time:</label>
+	<input type="time" id="time" name="time"><br>
+	
+	
+	
+	<label for="ta">write a review</label>
+	<textarea id="ta" name="ta"  rows="4" cols="50">
+	</textarea><br>
+	
+	<input type="button" value="Click me">
+	<input type="submit" value="submit">
+	<input type="reset">
+</form>	
+</body>
+</html>

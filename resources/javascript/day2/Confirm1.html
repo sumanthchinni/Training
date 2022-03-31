@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function msg_confirm(){
+		var a=confirm("press a button");
+		if(a==true){
+			document.write("You pressed ok");
+		}
+		else{
+			document.write("You pressed cancel")
+		}
+	}
+</script>
+</head>
+<body>
+<input type="button" onclick="msg_confirm()" value="confirm box">
+
+</body>
+</html>
