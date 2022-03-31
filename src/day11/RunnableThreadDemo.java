@@ -1,6 +1,7 @@
 package day11;
 class RThread implements Runnable{
 	@Override
+	
 	public void run() {
 		System.out.println("In run method = "+Thread.currentThread().getName());
 	}

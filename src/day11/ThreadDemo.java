@@ -18,6 +18,6 @@ public class ThreadDemo {
 		new TThread().start();
 		new TThread().start();
 	}
-	}
+}
 
 
